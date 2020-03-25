@@ -377,7 +377,7 @@
 
       it('should apply a function to every value in an array', function() {
         var multiplyByTwo = function(value) { return (value * 2) };
-        
+
         expect(_.map([1, 2, 3], multiplyByTwo)).to.eql([2, 4, 6]);
       });
 
@@ -424,7 +424,7 @@
       it('should not mutate the input array', function() {
         var input = [1, 2, 3, 4, 5];
         var result = _.reduce(input, function(memo, item) { return item; });
-        
+
         /*
          * Mutation of inputs should be avoided without good justification otherwise
          * as it can often lead to hard to find bugs and confusing code!
@@ -465,7 +465,7 @@
 
       it('should pass items of the array into the iterator from left to right', function() {
         var orderTraversed = [];
-        //_.reduce(list, iteratee, [memo], [context]) 
+        //_.reduce(list, iteratee, [memo], [context])
         _.reduce([1, 2, 3, 4], function(memo, item) {
           orderTraversed.push(item);
           return memo;
