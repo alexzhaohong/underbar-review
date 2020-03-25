@@ -40,7 +40,7 @@
   _.last = function(array, n) {
     return n === undefined ? array[array.length - 1]
       : n > array.length ? array.slice()
-      : array.slice(array.length - n, array.length);
+        : array.slice(array.length - n, array.length);
   };
 
   // Call iterator(value, key, collection) for each element of collection.
@@ -63,8 +63,6 @@
       }
     }
   };
-
-   // Hey there!
 
   // Returns the index at which value can be found in the array, or -1 if value
   // is not present in the array.
